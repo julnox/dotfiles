@@ -1,3 +1,4 @@
 return {
-  "anott03/nvim-lspinstall",
+  "mfussenegger/nvim-dap",
+  "rcarriga/nvim-dap-ui"
 }
