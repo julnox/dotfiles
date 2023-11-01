@@ -21,3 +21,11 @@ keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
+keymap.set("t", "<ESC>", "<C-\\><C-n>") -- exit terminal mode with esc
+keymap.set("n", "=", [[<cmd>vertical resize +5<cr>]]) -- make the window biger vertically
+keymap.set("n", "-", [[<cmd>vertical resize -5<cr>]]) -- make the window smaller vertically
+keymap.set("n", "+", [[<cmd>horizontal resize +2<cr>]]) -- make the window bigger horizontally by pressing shift and =
+keymap.set("n", "_", [[<cmd>horizontal resize -2<cr>]]) -- make the window smaller horizontally by pressing shift and -
+
+keymap.set("n", "<leader>f", ":Format<CR>")
+keymap.set("n", "<leader>F", ":FormatWrite<CR>")
