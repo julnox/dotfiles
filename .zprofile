@@ -8,5 +8,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export GPG_TTY=$(tty)
-PATH="/usr/local/bin:$PATH"
+if [ -d "/usr/local/bin" ] ; then
+    PATH="/usr/local/bin:$PATH"
+fi
+
+if [ -d "/usr/games" ] ; then
+    PATH="/usr/games:$PATH"
+fi
