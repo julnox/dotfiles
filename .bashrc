@@ -118,3 +118,7 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1='\[\e[32;1m\]\W \[\e[33;1m\]$(__git_ps1 "git:(%s) ")\[\e[32;1m\]\$> \[\e[0m\]'
 
 export GPG_TTY=$(tty)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
