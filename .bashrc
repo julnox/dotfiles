@@ -112,7 +112,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. /etc/bash_completion.d/git-prompt
+. /usr/share/git-core/contrib/completion/git-prompt.sh
 export EDITOR='vim'
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1='\[\e[32;1m\]\W \[\e[33;1m\]$(__git_ps1 "git:(%s) ")\[\e[32;1m\]\$> \[\e[0m\]'
